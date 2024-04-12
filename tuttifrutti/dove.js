@@ -27,7 +27,7 @@ function stopTrack() {
 
 function startTrack() {
   const interval = +document.getElementById('interval').getAttribute('value');
-
+  interval = interval * 1000;
   if (interval > 0) {
     currentData = [];
     trackingIntervalId = window.setInterval(() => {
