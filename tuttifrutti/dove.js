@@ -32,7 +32,7 @@ function startTrack() {
     trackingIntervalId = window.setInterval(() => {
       collectEntry();
       log.innerText = currentData.slice(-10).map(JSON.stringify).reverse().join(',\n');
-    }, interval* 1000);
+    }, interval);
   }
   isTracking = true;
 }
