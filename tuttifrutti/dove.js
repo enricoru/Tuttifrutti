@@ -26,7 +26,7 @@ function stopTrack() {
 }
 
 function startTrack() {
-  var interval = document.getElementById('interval').value;
+  var interval = document.getElementById('interval').value * 1000;
   //  const interval = document.getElementById('interval').getAttribute('value');
   if (interval > 0) {
     currentData = [];
