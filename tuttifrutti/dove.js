@@ -42,6 +42,7 @@ function collectEntry() {
   navigator.geolocation.getCurrentPosition(position => {
     currentData.push(toObj(position))
   });
+  return;
 }
 
 
