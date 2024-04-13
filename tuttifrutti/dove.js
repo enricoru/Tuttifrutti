@@ -26,7 +26,7 @@ function stopTrack() {
 }
 
 function startTrack() {
-  const interval = +document.getElementById('interval').getAttribute('value');
+  const interval = document.getElementById('interval').getAttribute('value');
   if (interval > 0) {
     currentData = [];
     trackingIntervalId = window.setInterval(() => {
