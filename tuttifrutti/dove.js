@@ -40,7 +40,7 @@ function startTrack() {
 
 function collectEntry() {
   navigator.geolocation.getCurrentPosition(position => {
-    currentData.push(toObj(position.coords.latitude + " - " + position.coords.longitude + " - " + date(position.coords.timestamp))
+    currentData.push(toObj(position.coords.latitude + " - " + position.coords.longitude + " - " + Date(position.coords.timestamp))
   });
   return;
 }
