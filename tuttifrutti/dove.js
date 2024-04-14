@@ -17,7 +17,7 @@ trackBtn.onclick = () => {
   }
 }
 downloadBtn.onclick = () => {
-  download('GeoData.json', JSON.stringify(currentData));
+  download('tuttifrutti.json', JSON.stringify(currentData));
 }
 
 function stopTrack() {
