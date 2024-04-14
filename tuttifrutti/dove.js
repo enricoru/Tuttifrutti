@@ -41,6 +41,7 @@ function startTrack() {
 function collectEntry() {
   navigator.geolocation.getCurrentPosition(position => {
     currentData.push(toObj(position.coords.latitude))
+    currentData.push(toObj(position.coords.longitude))
   });
   return;
 }
