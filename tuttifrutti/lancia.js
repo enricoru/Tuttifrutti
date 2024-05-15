@@ -6,7 +6,7 @@ trackBtn.onclick = () => {
 
     if (window.Worker) {
         console.log('Message posted to worker');
-        const myWorker = new Worker(".\dove.js");
+        const myWorker = new Worker("dove.js");
      
 
     } else {
