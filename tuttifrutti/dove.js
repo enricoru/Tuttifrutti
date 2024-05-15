@@ -18,12 +18,12 @@ onmessage = function(e) {k = () => {
   } else {
     startTrack();
   }
-}*/
+}
                         }
 downloadBtn.onclick = () => {
   download('tuttifrutti.json', JSON.stringify(currentData));
 }
-
+*/
 function stopTrack() {
   isTracking = false;
   window.clearInterval(trackingIntervalId)
