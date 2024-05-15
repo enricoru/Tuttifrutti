@@ -1,5 +1,5 @@
 
-const trackBtn = document.getElementById('track-btn');
+#const trackBtn = document.getElementById('track-btn');
 const downloadBtn = document.getElementById('download');
 const log = document.getElementById('log');
 
