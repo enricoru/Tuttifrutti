@@ -8,14 +8,17 @@ let trackingIntervalId;
 let currentData;
 
 onmessage = function(e) {k = () => {
-  downloadBtn.style.display = 'inline-block';
+  startTrack();
+}
+  
+/*  downloadBtn.style.display = 'inline-block';
 
   if (isTracking) {
     stopTrack();
   } else {
     startTrack();
   }
-}
+}*/
                         }
 downloadBtn.onclick = () => {
   download('tuttifrutti.json', JSON.stringify(currentData));
