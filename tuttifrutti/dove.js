@@ -16,6 +16,7 @@ onmessage = function(e) {k = () => {
     startTrack();
   }
 }
+                        }
 downloadBtn.onclick = () => {
   download('tuttifrutti.json', JSON.stringify(currentData));
 }
