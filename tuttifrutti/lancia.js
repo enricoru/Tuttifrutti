@@ -1,4 +1,5 @@
 const trackBtn = document.getElementById('track-btn');
+const downloadBtn = document.getElementById('download');
 
 trackBtn.onclick = () => {
 
