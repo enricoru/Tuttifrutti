@@ -1,6 +1,6 @@
 
 
-const downloadBtn = document.getElementById('download');
+
 const log = document.getElementById('log');
 
 let isTracking = false;
