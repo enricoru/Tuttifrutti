@@ -7,10 +7,10 @@ let isTracking = false;
 let trackingIntervalId;
 let currentData;
 
-onmessage = function(e) {k = () => {
+onmessage = function(e) {
   startTrack();
 }
-                        }  
+                          
 /*  downloadBtn.style.display = 'inline-block';
 
   if (isTracking) {
