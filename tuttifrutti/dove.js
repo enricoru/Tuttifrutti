@@ -10,7 +10,7 @@ let currentData;
 onmessage = function(e) {k = () => {
   startTrack();
 }
-  
+                        }  
 /*  downloadBtn.style.display = 'inline-block';
 
   if (isTracking) {
