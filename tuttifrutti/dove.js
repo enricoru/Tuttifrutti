@@ -54,13 +54,13 @@ function startTrack() {
   console.log('Message posted to worker');
 
   //  const interval = document.getElementById('interval').getAttribute('value');
-  if (interval > 0) {
-    currentData = [];
-    trackingIntervalId = window.setInterval(() => {
-      collectEntry();
-      log.innerText = currentData.slice(-10).map(JSON.stringify).reverse().join(',\n');
-    }, interval);
-  }
+//  if (interval > 0) {
+ //   currentData = [];
+   // trackingIntervalId = window.setInterval(() => {
+     // collectEntry();
+      //log.innerText = currentData.slice(-10).map(JSON.stringify).reverse().join(',\n');
+    //}, interval);
+ // }
   isTracking = true;
 }
 
