@@ -7,6 +7,7 @@ const log = document.getElementById('log');
 let isTracking = false;
 let trackingIntervalId;
 let currentData;
+
 let myWorker;
 if (window.Worker) {
   if(typeof(myWorker) == "undefined") {
@@ -20,9 +21,9 @@ if (window.Worker) {
 //    }
 //  })
 
-//  myWorker.onmessage = function(e) {
-//    result.textContent = e.data;
-//    console.log('Message received from worker');
+myWorker.onmessage = function(e) {
+  log.innerText = e.data;
+  console.log('Message received from worker');
 //  }
 } else {
   console.log('Your browser doesn\'t support web workers.');
