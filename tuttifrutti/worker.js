@@ -1,6 +1,6 @@
 onmessage = function(e) {
   console.log('Worker: Message received from main script');
-  postMessage('message from worker'):
+  postMessage('message from worker');
   
   //console.log(e);
  /* const result = e.data[0] * e.data[1];
