@@ -1,4 +1,11 @@
 let position;
+
+function collectEntry() {
+  navigator.geolocation.getCurrentPosition(position => {
+    currentData.push(toObj(position.coords.latitude + " - " + position.coords.longitude + " - " + Date(position.coords.timestamp).toString()))
+  });
+  return;
+}
 onmessage = function(e) {
   console.log('Worker: Message received from main script');
   var interval = e.data;
