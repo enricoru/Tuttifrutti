@@ -45,7 +45,7 @@ function stopTrack() {
 
 function startTrack() {
   const myWorker = new Worker("worker.js");
-  myWorker.postMessage("message");
+  myWorker.postMessage("message_1");
   console.log('Message posted to worker');
   var interval = document.getElementById('interval').value * 1000;
   //  const interval = document.getElementById('interval').getAttribute('value');
