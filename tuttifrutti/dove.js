@@ -64,12 +64,12 @@ function startTrack() {
   isTracking = true;
 }
 
-function collectEntry() {
+/*function collectEntry() {
   navigator.geolocation.getCurrentPosition(position => {
     currentData.push(toObj(position.coords.latitude + " - " + position.coords.longitude + " - " + Date(position.coords.timestamp).toString()))
   });
   return;
-}
+}*/
 
 
 function toObj(obj) {
