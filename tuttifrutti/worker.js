@@ -3,6 +3,12 @@ let currentData;
 let pos;
 
 function collectEntry() {
+   if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition();
+  }
+  else {
+    console.log('geolocation not supported');
+  }
   navigator.geolocation.getCurrentPosition(position => {
     currentData.push(toObj(position.coords.latitude + " - " + position.coords.longitude + " - " + Date(position.coords.timestamp).toString()))
   });
