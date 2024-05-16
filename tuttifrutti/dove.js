@@ -7,6 +7,23 @@ const log = document.getElementById('log');
 let isTracking = false;
 let trackingIntervalId;
 let currentData;
+if (window.Worker) {
+  const myWorker = new Worker("worker.js");
+
+//  [first, second].forEach(input => {
+//    input.onchange = function() {
+//      myWorker.postMessage([first.value, second.value]);
+      console.log('Message posted to worker');
+//    }
+//  })
+
+//  myWorker.onmessage = function(e) {
+//    result.textContent = e.data;
+//    console.log('Message received from worker');
+//  }
+} else {
+  console.log('Your browser doesn\'t support web workers.');
+}
 
 trackBtn.onclick = () => {
   downloadBtn.style.display = 'inline-block';
