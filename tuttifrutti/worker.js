@@ -10,7 +10,7 @@ onmessage = function(e) {
     }, interval);
   }
   isTracking = true;
-}
+
   postMessage(position);
   
   //console.log(e);
