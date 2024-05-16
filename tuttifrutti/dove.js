@@ -9,7 +9,9 @@ let trackingIntervalId;
 let currentData;
 let myWorker;
 if (window.Worker) {
-  myWorker = new Worker("worker.js");
+  if(typeof(myWorker) == "undefined") {
+    myWorker = new Worker("worker.js");
+  }
 
 //  [first, second].forEach(input => {
 //    input.onchange = function() {
