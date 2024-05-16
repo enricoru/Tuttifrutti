@@ -1,3 +1,4 @@
+let position;
 onmessage = function(e) {
   console.log('Worker: Message received from main script');
   var interval = e * 1000;
