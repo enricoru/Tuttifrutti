@@ -21,14 +21,15 @@ if (window.Worker) {
 //    }
 //  })
 
-myWorker.onmessage = function(e) {
-  log.innerText = e.data;
-  console.log('Message received from worker');
+
 //  }
 } else {
   console.log('Your browser doesn\'t support web workers.');
 }
-
+myWorker.onmessage = function(e) {
+  log.innerText = e.data;
+  console.log('Message received from worker');
+}
 trackBtn.onclick = () => {
   downloadBtn.style.display = 'inline-block';
 
