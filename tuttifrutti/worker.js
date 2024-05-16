@@ -8,7 +8,7 @@ onmessage = function(e) {
       collectEntry();
       position = currentData.slice(-10).map(JSON.stringify).reverse().join(',\n');
     }, interval);
-  }
+  
   isTracking = true;
 
   postMessage(position);
