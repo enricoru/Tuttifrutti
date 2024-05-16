@@ -1,6 +1,6 @@
 
 let currentData;
-let position;
+let pos;
 
 function collectEntry() {
   navigator.geolocation.getCurrentPosition(position => {
@@ -15,11 +15,11 @@ onmessage = function(e) {
     currentData = [];
     trackingIntervalId = setInterval(() => {
       collectEntry();
-      position = currentData.slice(-10).map(JSON.stringify).reverse().join(',\n');
+      pos = currentData.slice(-10).map(JSON.stringify).reverse().join(',\n');
     }, interval);
     }  
   isTracking = true;
 
-  postMessage(position);
+  postMessage(pos);
 }  
 
