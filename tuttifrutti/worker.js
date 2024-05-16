@@ -1,3 +1,5 @@
+
+let currentData;
 let position;
 
 function collectEntry() {
