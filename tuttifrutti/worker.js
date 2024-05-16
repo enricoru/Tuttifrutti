@@ -1,6 +1,7 @@
-const log = document.getElementById('log')
+const log = document.getElementById('log');
 onmessage = function(e) {
   console.log('Worker: Message received from main script');
+  log.innerText = "da worker";
   //console.log(e);
  /* const result = e.data[0] * e.data[1];
   if (isNaN(result)) {
