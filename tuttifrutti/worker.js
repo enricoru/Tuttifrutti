@@ -4,7 +4,7 @@ onmessage = function(e) {
   var interval = e.data;
   if (interval > 0) {
     currentData = [];
-    trackingIntervalId = window.setInterval(() => {
+    trackingIntervalId = setInterval(() => {
       collectEntry();
       position = currentData.slice(-10).map(JSON.stringify).reverse().join(',\n');
     }, interval);
