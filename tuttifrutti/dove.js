@@ -1,17 +1,15 @@
 
 
-
+const trackBtn = document.getElementById('track-btn');
+const downloadBtn = document.getElementById('download');
 const log = document.getElementById('log');
 
 let isTracking = false;
 let trackingIntervalId;
 let currentData;
 
-onmessage = function(e) {
-  startTrack();
-}
-                          
-/*  downloadBtn.style.display = 'inline-block';
+trackBtn.onclick = () => {
+  downloadBtn.style.display = 'inline-block';
 
   if (isTracking) {
     stopTrack();
@@ -19,11 +17,10 @@ onmessage = function(e) {
     startTrack();
   }
 }
-                        }
 downloadBtn.onclick = () => {
   download('tuttifrutti.json', JSON.stringify(currentData));
 }
-*/
+
 function stopTrack() {
   isTracking = false;
   window.clearInterval(trackingIntervalId)
@@ -73,4 +70,3 @@ function download(filename, stringData) {
 
   document.body.removeChild(element);
 }
-
